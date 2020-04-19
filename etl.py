@@ -81,7 +81,7 @@ def process_log_file(cur: Any, filepath: str):
         cur.execute(songplay_table_insert, songplay_data)
 
 
-def process_data(cur, conn, filepath, func):
+def process_data(cur: Any, conn: Any, filepath: str, func: Any):
     """
     Processes either logs or songs depending on the given function.
     @param cur: the database cursor
